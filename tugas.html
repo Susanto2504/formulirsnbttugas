@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Acme&family=Bungee&family=Pacifico&family=Poppins:wght@400;500;600;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+        body{
+            padding: 80px;
+            height: 100vh;
+            justify-self: center;
+            /* background-color: rgb(126, 124, 124); */
+        }
+
+        .kotak {
+            background-color: rgb(255, 255, 255);
+            height: auto;
+            width: auto;
+            border: 2px solid rgb(150, 150, 150); 
+            align-content: center;
+            padding: 5px 5px;
+            border-style: dashed;
+        }
+
+        /* Kotak 1 */
+        .isi1 {
+            /* padding: 5px 5px; */
+            display: flex;
+            gap: 5px;
+            justify-self: center;
+        }
+
+        
+
+        .logo {
+            border: 1px solid black;
+        }
+
+        .isilogo {
+            display: flex;
+            padding: 0 5px;
+            margin-top: -10px;
+            gap: 20px;
+        }
+
+        .isilogo img {
+            width: 120px;
+            height: 120px;
+            margin-top: 20px;
+            object-fit: cover;
+            border-right: 1px solid rgb(190, 188, 188);
+            padding: 5px;
+        }
+
+        .bagiankanan {
+            padding-top: 10px;
+        }
+
+        
+        .tulisan {
+            font-size: 70px;
+            font-weight: 600;
+            color: rgb(37, 110, 153);
+            margin-top: 20px;
+            /* background-color: aqua; */
+        }
+
+        .tulisan2 {
+            margin-top: -85px;
+            font-size: 13px;
+            text-align: center;
+            color: rgb(122, 121, 121);
+        }
+
+        .tulisan3 {
+            margin-top: -11px;
+            font-size: 16px;
+            color: rgb(61, 61, 61);
+        }
+
+        .bawah {
+            line-height: 5px;
+            font-size: 35px;
+            padding: 0 15px;
+            text-align: center;
+            color: rgb(37, 110, 153);
+            font-weight: 600;
+            border-top: 1px solid rgb(190, 188, 188);
+            margin-bottom: -20px;
+        }
+
+        .bawah1 {
+            font-size: 30px;
+            /* font-weight: 100; */
+            text-align: center;
+        }
+
+        .bawah2 {
+            font-size: 38px;
+        }
+
+        /* Kotak 2 */
+        .isi2 {
+            margin-top: 5px;
+            border: 1px solid rgb(180, 178, 178);
+        }
+
+        .isi2 table {
+            padding: 3px 5px;
+            color: rgb(59, 92, 155);
+        }
+
+        .jawaban {
+            color: rgb(51, 50, 50);
+            font-size: 12px;
+        }
+
+        .isi3 {
+            margin-top: 5px;
+            border: 1px solid rgb(180, 178, 178);
+            padding: 10px 5px;
+        }
+
+        .tabel1 {
+            margin-left: 35px;
+        }
+
+        td {
+            color: rgb(59, 92, 155);
+            font-size: 12px;
+        }
+
+        label {
+            color: rgb(72, 49, 202);
+            font-weight: 800;
+        }
+
+        .tulisan4 {
+            margin-left: 177px;
+            font-family: "Roboto";
+            color: red;
+            margin-top: 0;
+            font-weight: 800;
+            font-size: 12px;
+        }
+
+        .jawaban2 {
+            color: rgb(51, 50, 50);
+            font-size: 12px;
+            padding-bottom: 25px;
+        }
+
+        .judullok {
+            color: rgb(51, 50, 50);
+            font-size: 12px;
+            padding-top: 15px;
+            color: rgb(59, 92, 155);
+            font-size: 12px;
+        }
+
+        .jawaban3 {
+            padding-top: 15px;
+            color: rgb(51, 50, 50);
+            font-size: 12px;
+        }
+
+        .isi4 {
+            display: flex;
+            gap: 5px;
+            margin-top: 5px;
+            max-height: 230px;
+        }
+        .kotakkiri{
+            border: 1px solid rgb(180, 178, 178);
+            max-width: 350px;
+            padding: 5px 5px;
+        }
+
+        .kotakkiri table{
+            margin-left: 30px;
+        }
+
+        .kotakkanan{
+            border: 1px solid rgb(180, 178, 178);
+        }
+
+        .kotakkanan img{
+           padding: 10px;
+           width: 241px;
+           height: 210px;
+           object-fit: cover;
+        }
+
+        .nomor {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .foto {
+            border: 1px solid rgba(0, 0, 0, 0.616);
+            height: 100%;
+            /* background-color: brown; */
+            align-self: center;
+            padding: 5px 5px;
+            
+        }
+
+        .foto img {
+            width: 205px;
+            height: 270px;
+            object-fit: cover;
+        }
+
+        .label2 {
+            color: rgb(72, 49, 202);
+            font-weight: 800;
+            font-size: 10px;
+            line-height: 13px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="kotak">
+        <div class="isi1">
+            <div class="foto">
+            <img src="img/Gambar WhatsApp 2025-09-18 pukul 13.02.24_3c610a27.jpg" alt="foto">
+            </div>
+            <div class="logo">
+                <div class="isilogo">
+                    <img src="img/tut_wuri_handayani-removebg-preview.png" alt="logo">
+                    <div class="bagiankanan">
+                        <div class="atas">
+                            <p class="tulisan">SNPMB</p>
+                            <p class="tulisan2">Seleksi Nasional Penerimaan Mahasiswa Baru</p>
+                            <p class="tulisan3">Balai Pengelola Pengujian Pendidikan</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bawah">
+                    <p class="bawah1">KARTU TANDA PESERTA</p>
+                    <p class="bawah2">UTBK-SNBT</p>
+                    <p>TAHUN 2024</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="isi2">
+            <table >
+                <tr>
+                    <td width="150">NOMOR PESERTA </td>
+                    <td class="jawaban">: 24-7120-160747</td>
+                    </tr>
+                    <tr>
+                    <td>NAMA PESERTA </td>
+                    <td class="jawaban">: Chalvin Susanto</td>
+                    </tr>
+                    <tr>
+                    <td>TANGGAL LAHIR</td>
+                    <td class="jawaban">: 28-09-2005</td>
+                    </tr>
+                    <tr>
+                    <td>NISN</td>
+                    <td class="jawaban">: 0057099553</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="isi3">
+            <div class="jadwalutbk">
+                <label for="jadwalutbk">JADWAL UTBK</label>
+                <table class="tabel1">
+                    <tr>
+                        <td width="110px">HARI</td>
+                        <td width="10">:</td>
+                        <td class="jawaban">Selasa</td>
+                    </tr>
+                    <tr>
+                        <td>TANGGAL</td>
+                        <td>:</td>
+                        <td class="jawaban">14-05-2024</td>
+                    </tr>
+                    <tr>
+                        <td>JAM</td>
+                        <td>:</td>
+                        <td class="jawaban">13:30 -17:15 WITA</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td class="tulisan4">Peserta harus hadir 1 jam sebelum ujian dimulai.</td>
+                    </tr>
+
+                </table>
+            </div>
+
+            <div class="LokasiUTBK">
+                <label for="lokasiutbk">LOKASI UTBK</label>
+                <table class="tabel1" >
+                    <tr>
+                        <td width="110px">PUSAT UTBK</td>
+                        <td width="10">:</td>
+                        <td class="jawaban">UNIVERISTAS NEGERI MAKASSAR</td>
+                    </tr>
+                    <tr>
+                        <td>LOKASI</td>
+                        <td>:</td>
+                        <td class="jawaban">Fakultas Seni dan Desain UNM Parangtambung</td>
+                    </tr>
+                    <tr>
+                        <td class="judullok">RUANG</td>
+                        <td class="judullok">:</td>
+                        <td class="jawaban3">FSD Lab DKV</td>
+                    </tr>
+                    <tr>
+                        <td class="judullok">ALAMAT</td>
+                        <td class="judullok">:</td>
+                        <td class="jawaban3" width="400">Jl.Mallengkeri Raya, Parang Tambung, Kec.Tamalate, Kota Makassar, </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td class="jawaban">Sulawesi Selatan 90224</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="pilihanProdi">
+                <label for="pilihanProdi">PILIHAN PRODI</label>
+                <table class="tabel1" >
+                    <tr>
+                        <td width="110px">PILIHAN 1</td>
+                        <td width="10">:</td>
+                        <td class="jawaban">UNIVERISTAS GADJAH MADA</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td class="jawaban2">361067 - S1 - HUKUM</td>
+                    </tr>
+                    <tr>
+                        <td>PILIHAN 2</td>
+                        <td>:</td>
+                        <td class="jawaban" height="10">UNIVERISTAS HASSANUDDIN</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td class="jawaban2">711059 - S1 - ILMU KOMUNIKASI</td>
+                    </tr>
+                    <tr>
+                        <td>PILIHAN 3</td>
+                        <td>:</td>
+                        <td class="jawaban">POLITEKNIK NEGERI UJUNG PANDANG</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td class="jawaban2">716007 - D4 - TEKNIK MULTIMEDIA & JARINGAN</td>
+                    </tr>
+                    <tr>
+                        <td>PILIHAN 4</td>
+                        <td>:</td>
+                        <td class="jawaban" width="400">UNIVERSITAS INDONESIA</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td class="jawaban2">321072 - D3 - PENYIARAN MULTIMEDIA</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="isi4">
+            <div class="kotakkiri">
+                <div class="nomor1">
+                    <label for="info" class="label2">1.</label>
+                    <label for="info" class="label2">PERLENGKAPAN YANG HARUS DIBAWA PADA SAAT UJIAN</label>
+                </div>
+                </table>
+                <table>
+                    <tr>
+                        <td><li>Kartu Tanda Peserta UTBK-SNBT 2024</li></td>
+                    </tr>
+                    <tr>
+                        <td><li>Bagi Angkatan 2024: Surat Keterangan Kelas 12 asli yang ditandatangani oleh Kepala Sekolah serta berisi namasiswa, NISN siswa, NPSN sekolah, dan pasfoto siswa terbaru (3 bulan terakhir)</li></td>
+                    </tr>
+                    <tr>
+                        <td><li>Bagi lulusan 2022 dan 2023: Ijazah/Legalisir Ijazah</li></td>
+                    </tr>
+                    <tr>
+                        <td><li>Identitas diri lain seperti KTP atau SIM</li></td>
+                    </tr>
+                </table>
+                <div class="nomor">
+                <label for="info" class="label2">2.</label> 
+                <label for="info" class="label2">LOKASI UTBK HARUS DILIHAT SATU HARI SEBELUM PELAKSANAAN UJIAN</label>
+                </div>
+                <div class="nomor">
+                    <label for="info" class="label2">3.</label>
+                    <label for="info" class="label2">MENGENAKAN MASKER PADA SAAT BERADA DI LOKASI UJIAN</label>
+                </div>
+                <div class="nomor">
+                    <label for="info" class="label2">4.</label>
+                    <label for="info" class="label2">PESERTA HARUS DALAM KONDISI SEHAT</label>
+                </div>
+                
+            </div>
+
+            <div class="kotakkanan">
+                <img src="img/QR-Code-Standard.jpg" alt="Barcode">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
